@@ -8,11 +8,11 @@ test("First Test", async ({ page }) => {
 
 
 
-test("test1", async({page})=>{
- 
-  
+test.afterAll( async({page})=> {
 
-});
+  await page.close();
+}
+)
 
 
 

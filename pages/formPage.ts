@@ -2,14 +2,15 @@ import { Page } from "@playwright/test";
 
 export default class Form{
 
-    page : Page;
+    // page : Page;
 
     firstName = "#firstName";
     lastName  =  "#lastName";
+ 
+    // page: Page;
    
-    constructor(page : Page){
+    constructor(public page : Page){
       this.page=page;
-
     }
 
 
